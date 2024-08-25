@@ -32,7 +32,7 @@ git clone https://github.com/tagraha/hono-mongodb-bun.git
 2. Navigate to the project directory
 
 ```bash
-cd bun-hono-rest-api
+cd hono-mongodb-bun
 ```
 
 3. Install dependencies
@@ -54,7 +54,7 @@ Create a .env file in the root directory of your project. Add environment-specif
 ```
 PORT=9000
 DB_NAME="MyDBName"
-MONGO_URI=mongodb://localhost:27017/bun-hono-rest-api
+MONGO_URI=mongodb://localhost:27017/hono-mongodb-bun
 JWT_SECRET=secret
 ```
 
@@ -76,8 +76,8 @@ POST /api/v1/users (Create User)
 
 ```json
 {
-  "name": "Mehedi Hasan",
-  "email": "mehedi@example.com",
+  "name": "alice",
+  "email": "alice@example.com",
   "password": "123456"
 }
 ```
@@ -88,7 +88,7 @@ POST /api/v1/users/login (Login User)
 
 ```json
 {
-  "email": "mehedi@example.com",
+  "email": "alice@example.com",
   "password": "123456"
 }
 ```
